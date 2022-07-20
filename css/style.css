@@ -1,0 +1,364 @@
+/* google fonts */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Roboto:ital,wght@0,400;1,300&family=Rubik:wght@400;500;700&display=swap");
+/* -------
+ main section of style
+ ------*/
+
+body {
+  background-color: #fff;
+  font-family: "Roboto", sans-serif;
+}
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.container {
+  background-color: #161616;
+  width: 870px;
+  padding: 10px;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+
+/* -------
+ banner section of style
+ ------*/
+.container-banner {
+  display: flex;
+}
+
+.baneer-titel {
+  width: 50%;
+  margin-left: 30px;
+  margin-top: 30px;
+}
+h1 {
+  font-size: 3em;
+  color: #fff;
+}
+p {
+  font-size: 1em;
+  color: #fff;
+}
+
+.button {
+  text-decoration: none;
+  background-color: red;
+  color: #fff;
+  font-weight: 700;
+  padding: 15px;
+  border-radius: 10px;
+}
+.button img {
+  width: 25px;
+  height: 25px;
+}
+/*--------
+animation
+----------*/
+.ball {
+  position: relative;
+  transition: transform 1s ease-out 0.3s;
+}
+
+.button:hover .ball {
+  transform: translate(700px, -100px);
+}
+
+/*------End-----*/
+
+.banner-image {
+  width: 50%;
+}
+.banner-image img {
+  width: 100%;
+}
+
+/*------blog-----*/
+
+.container-main {
+  width: 870px;
+  padding: 10px;
+  border-radius: 10px;
+  margin-top: 100px;
+}
+
+.flex-part {
+  display: flex;
+}
+.menu-part {
+  width: 30%;
+  height: 150px;
+  padding: 5px;
+  background-color: #161616;
+  border-radius: 5px;
+}
+.button-1 {
+  text-decoration: none;
+  text-align: center;
+  display: block;
+  background-color: #fff;
+  color: #000;
+  font-weight: 700;
+  padding: 5px;
+  margin: 15px 0;
+  border-radius: 5px;
+}
+.button-2 {
+  text-decoration: none;
+  text-align: center;
+  display: block;
+  background-color: red;
+  color: #fff;
+  font-weight: 700;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.poster-part {
+  width: 70%;
+  margin-left: 5px;
+  border-radius: 5px;
+}
+.poster-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-row-gap: 5px;
+}
+
+.collection {
+  margin-left: 10px;
+}
+.collection-image {
+  margin-left: 5px;
+}
+
+.collection-image img {
+  width: 100%;
+}
+.button-text {
+  margin-top: 10px;
+  margin-left: 5px;
+  border-radius: 2px;
+}
+.button-collection {
+  text-decoration: none;
+  background-color: #fff;
+  color: #000;
+  font-weight: 500;
+  border: 1px solid #000;
+  padding: 5px;
+  margin-top: 5px;
+  border-radius: 2px;
+}
+.collection-icon {
+  display: flex;
+  justify-content: space-around;
+}
+.icon-1,
+.icon-2 {
+  color: #161616;
+}
+.extra-button {
+  visibility: hidden;
+}
+
+/* -------
+ Footer section of style
+ ------*/
+Footer {
+  background-color: #161616;
+  padding-bottom: 50px;
+}
+.footer-tital {
+  text-align: center;
+}
+h2 {
+  font-size: 2em;
+  font-weight: 700;
+  text-align: center;
+  color: antiquewhite;
+  padding-top: 50px;
+}
+hr {
+  width: 70%;
+  text-align: center;
+  color: aliceblue;
+}
+.footer-menu ul {
+  text-align: center;
+}
+.footer-menu li {
+  display: inline;
+}
+.footer-menu a:link {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px;
+}
+.fa-brands {
+  color: #fff;
+  text-align: center;
+  padding-right: 40px;
+  font-size: 20px;
+}
+
+/*--------
+Media Queries
+------------*/
+
+/*  Mobile Devices  */
+
+@media only screen and (max-width: 688px) {
+  .container {
+    background-color: #161616;
+    width: 100%;
+    border-radius: 5px;
+  }
+
+  .container-banner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .banner-image {
+    margin-top: 10px;
+  }
+  .flex-part {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .menu-part {
+    width: 40%;
+    height: 150px;
+    margin-right: 5px;
+    padding: 5px;
+    background-color: #161616;
+    border-radius: 5px;
+  }
+  .poster-grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-row-gap: 5px;
+  }
+  .collection {
+    margin-top: 10px;
+  }
+
+  .button-collection {
+    text-decoration: none;
+    background-color: #fff;
+    color: #000;
+    font-weight: 500;
+    border: 1px solid #000;
+    padding: 5px;
+    margin-top: 5px;
+    margin-left: 15px;
+    border-radius: 2px;
+  }
+  h3 {
+    text-align: center;
+    font-size: 12px;
+  }
+  Footer {
+    background-color: #161616;
+  }
+  h2 {
+    font-size: 1em;
+    font-weight: 700;
+    text-align: center;
+    color: antiquewhite;
+  }
+  .footer-menu ul {
+    text-align: center;
+  }
+  .footer-menu a:link {
+    display: block;
+    text-align: center;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+  }
+}
+
+/*  Tablet Devices  */
+
+@media only screen and (min-width: 688px) and (max-width: 992px) {
+  .container {
+    background-color: #161616;
+    width: 100%;
+    border-radius: 5px;
+  }
+
+  .container-banner {
+    display: flex;
+    align-items: center;
+  }
+  .banner-image {
+    margin-top: 10px;
+  }
+  .flex-part {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .menu-part {
+    width: 80%;
+    height: 150px;
+    margin-right: 5px;
+    padding: 5px;
+    background-color: #161616;
+    border-radius: 5px;
+  }
+  .poster-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-row-gap: 5px;
+  }
+  .collection {
+    margin-top: 10px;
+  }
+
+  .button-collection {
+    text-decoration: none;
+    background-color: #fff;
+    color: #000;
+    font-weight: 500;
+    border: 1px solid #000;
+    padding: 5px;
+    margin-top: 5px;
+    margin-left: 15px;
+    border-radius: 2px;
+  }
+  h3 {
+    text-align: center;
+    font-size: 12px;
+  }
+  .extra-button {
+    visibility: visible;
+  }
+  Footer {
+    background-color: #161616;
+    width: 690px;
+  }
+  h2 {
+    font-size: 1em;
+    font-weight: 700;
+    text-align: center;
+    color: antiquewhite;
+  }
+  .footer-menu ul {
+    text-align: center;
+  }
+  .footer-menu li {
+    display: inline;
+  }
+  .footer-menu a:link {
+    text-align: center;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+  }
+}
